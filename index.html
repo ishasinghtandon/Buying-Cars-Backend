@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CarsDekho.com</title>
+</head>
+<body>
+    <header>
+        <!-- Header content here -->
+    </header>
+
+    <section class="banner">
+        <!-- Banner content here -->
+    </section>
+
+    <section class="car-options">
+        <h2>Select Car Options:</h2>
+        <form action="process.php" method="post">
+            <label>
+                <input type="checkbox" name="carOptions[]" value="Hatchback"> Hatchback
+            </label>
+            <label>
+                <input type="checkbox" name="carOptions[]" value="Sedan"> Sedan
+            </label>
+            <label>
+                <input type="checkbox" name="carOptions[]" value="SUV"> SUV
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section class="user-info">
+        <h2>Your Information:</h2>
+        <form action="process.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" required>
+
+            <label for="email">Email Id:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
